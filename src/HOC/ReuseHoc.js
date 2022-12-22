@@ -6,10 +6,16 @@ const ReuseHoc=(OriginalComponent,counter)=> {
     const[state,setState]=useState(0)
 
     return(
-        <OriginalComponent count={state} inc={()=>setState(state+ counter)}/>
+        <OriginalComponent count={state} inc={()=>{setState(state+ counter)}}/>
     )
   }
+ 
   return NewComponent
 }
 
 export default ReuseHoc
+
+
+
+
+

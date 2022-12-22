@@ -3,9 +3,12 @@ import {UseContexts} from './Context'
 class ComponentC extends Component {
   render() {
     return (
-     
+      <>
+      <div>hi</div>
+    
         <UseContexts>
 
+   
    {
     userName=>{
         return <h1>{userName}</h1>
@@ -13,7 +16,7 @@ class ComponentC extends Component {
    }
         </UseContexts>
        
-      
+        </>
     )
   }
 }
